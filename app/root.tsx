@@ -1,13 +1,10 @@
 import {
   Links,
-  LiveReload,
   Meta,
   Outlet,
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
-import "react-toastify/dist/ReactToastify.css";
-import { ToastContainer } from "react-toastify";
 
 import "./tailwind.css";
 
@@ -25,8 +22,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
         <ScrollRestoration />
         <Scripts />
-        {/* <LiveReload /> */}
-        <ToastContainer theme="dark" limit={3} />
       </body>
     </html>
   );
