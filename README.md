@@ -1,34 +1,30 @@
-# Developer Test
+# File Uploader
 
-📖 This is a developer test for a Senior Developer position with a company based in Iceland. Developers contacted were given details on the company and the steps for the test.
+This is a simple web application built using Remix Framework and Tailwind CSS. It allows users to upload files to the server and lists them on the page.
 
-## Task
+![chrome-capture-2024-3-22](https://github.com/VanLMC/keeps-remix-upload/assets/39391737/725db22f-e54b-4b92-a3ae-d504d2ee25d5)
 
-Clone this repository and build a simple file upload app using the Remix framework.
+## Features
 
-### Requirements
+- File upload functionality
+- Listing uploaded files on the page
+- Displays error and success message
 
-- Use the Remix framework and adhere to its conventions
-- Use or create a simple design with tailwindcss
-- Use or create a toast notification system
-- Simulate upload of a file to a server (you can use a library if if you want)
-- Display the uploaded file on the page
-- Simulate the upload with a delay
-- Simulate the upload failing
-- Simulate the upload succeeding
-- Simulate the upload being cancelled
-- Simulate the upload being paused
-- Create a failsafe method in case the network is offline during the upload (you can use a library like "react-use" or "@uidotdev/usehooks" for the network status)
-- Allow third party user to access the uploaded file
+## Technologies Used
 
-### Bonus Requirements
+- Remix Framework
+- Tailwind CSS
+- Utilizes Remix Framework's `unstable_createFileUploadHandler` and `unstable_parseMultipartFormData` for file handling
 
-- Host your app on a serverless platform like Vercel or Cloudflare Workers
-- Make the uploads work with the serverless platform with an actual api
-- Allow the upload to go to Google Drive or Dropbox
+## Getting Started
 
-### Notes
+1. Clone this repository.
+2. Install dependencies using `npm install`.
+3. Start the development server using `npm run dev`.
+4. Open your browser and navigate to `http://localhost:5173`.
 
-- You can use any library you want to help you with the task
-- You can use any API you want to simulate the upload
-- You can use any API you want to simulate the network status
+## Usage
+
+1. Select files
+2. Click on the upload button
+3. Uploaded files will be listed on the page
