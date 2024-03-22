@@ -101,7 +101,7 @@ export default function Index() {
 
         <div className="mt-6 text-white text-center">
           {loaderData?.files
-            ? loaderData?.files.map((file) => <div>{file}</div>)
+            ? loaderData?.files.map((file) => <div key={file}>{file}</div>)
             : null}
         </div>
       </div>
